@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOODPERSONS.INC о нас</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+<div class="header">
+    <h1>Дизайнерская: GOOODPERSONS.INC</h1>
+</div>
+
+<nav class="navbar">
+    <li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="страница2.html">Заказ дизайна</a></li>
+        <li><a href="страница4.html">Наши контакты</a></li>
+        <li> <a href="https://youtube.com">
+            <img src="youtube.jpeg" alt="youtube">
+        </a>
+    </li>
+    
+</nav>
+
+<div class="navigation">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Получите текущий URL страницы
+            var currentURL = window.location.href;
+
+            // Найти все ссылки в навигационной части
+            var navLinks = document.querySelectorAll(".navbar a");
+
+            // Переберите все ссылки и проверьте, совпадает ли URL ссылки с текущим URL
+            for (var i = 0; i < navLinks.length; i++) {
+                var link = navLinks[i];
+                var linkURL = link.href;
+
+                if (currentURL === linkURL) {
+                    // Установите класс "active" для активной ссылки
+                    link.classList.add("active");
+                }
+            }
+        });
+    </script>
+</div>
+
+
+
+<div class="content">
+    <h1>Свяжитесь с нами</h1>
+
+    <p>Добро пожаловать в мир GOOODPERSONS.INC — вашего надежного партнера в дизайне! Если у вас есть вопросы, предложения или просто хотите поздороваться, мы будем рады услышать вас.</p>
+
+    <div id="contact-form">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Ваш Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Ваше сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button onclick="submitForm()">Отправить сообщение</button>
+    </div>
+
+    <div id="response"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

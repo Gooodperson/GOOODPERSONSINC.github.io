@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="index.css">
+
+
+
+  <title>GOOODPERSONS.INC заказ</title>
+  <script>
+      function validateForm() {
+          var lastName = document.forms["contact-form"]["last-name"].value;
+          var firstName = document.forms["contact-form"]["first-name"].value;
+          var phone = document.forms["contact-form"]["phone"].value;
+          var email = document.forms["contact-form"]["email"].value;
+          var date = document.forms["contact-form"]["date"].value;
+
+          // Простая валидация (для демонстрационных целей)
+          if (lastName === "" || firstName === "" || phone === "" || email === "" || date === "") {
+              alert("Пожалуйста, заполните все поля.");
+              return false;
+          }
+
+          // Отправка данных на сервер (здесь нужно указать URL сервера)
+          var formData = new FormData(document.forms["contact-form"]);
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", "обработчик.php", true);
+          xhr.send(formData);
+
+          // Вместо alert вы можете предоставить другую обратную связь
+          alert("Данные отправлены на сервер. Спасибо!");
+      }
+  </script>
+
+
+
+
+</head>
+<body>
+
+
+<div class="header">
+    <h1>Дизайнерская: GOOODPERSONS.INC</h1>
+</div>
+
+<nav class="navbar">
+    <li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="страница2.html">Заказ дизайна</a></li>
+        <li><a href="страница4.html">Наши контакты</a></li>
+        <li> <a href="https://youtube.com">
+            <img src="youtube.jpeg" alt="youtube">
+        </a>
+    </li>
+    
+</nav>
+
+<div class="navigation">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Получите текущий URL страницы
+            var currentURL = window.location.href;
+
+            // Найти все ссылки в навигационной части
+            var navLinks = document.querySelectorAll(".navbar a");
+
+            // Переберите все ссылки и проверьте, совпадает ли URL ссылки с текущим URL
+            for (var i = 0; i < navLinks.length; i++) {
+                var link = navLinks[i];
+                var linkURL = link.href;
+
+                if (currentURL === linkURL) {
+                    // Установите класс "active" для активной ссылки
+                    link.classList.add("active");
+                }
+            }
+        });
+    </script>
+</div>
+
+<div class="content">
+    <h1>Страница с повторяющимся контентом</h1>
+
+    <!-- Повторяющийся блок контента -->
+    <div class="repeating-block">
+        <img src="д1.jpeg" alt="Пример изображения 1" class="repeating-image">
+        <p>Приветствие в мире элегантного дизайна! Наши веб-мастера создали великолепный сайт, где форма встречает функцию, а каждая деталь — проявление творческого вдохновения.</p>
+    </div>
+
+    <!-- Повторяющийся блок контента -->
+    <div class="repeating-block">
+        <img src="д2.jpeg" alt="Пример изображения 2" class="repeating-image">
+        <p>Эстетика в каждом пикселе. Погрузитесь в удивительный мир дизайна нашего сайта, где визуальная гармония сочетается с легкостью использования. Каждая страница — это искусство в виртуальном пространстве.</p>
+    </div>
+
+    <div class="repeating-block">
+        <img src="д3.jpeg" alt="Пример изображения 1" class="repeating-image">
+        <p>Дизайн, который заставит вас влюбиться в каждый элемент. Наши творцы разработали сайт, где даже самые мельчайшие детали становятся частью уникального художественного произведения. Добро пожаловать в мир вдохновляющего дизайна!</p>
+    </div>
+
+    <!-- Повторяющийся блок контента -->
+    <div class="repeating-block">
+        <img src="д4.jpeg" alt="Пример изображения 2" class="repeating-image">
+        <p>Современный стиль и безупречная функциональность. Представляем вам сайт, где современный дизайн сочетается с легкостью в использовании. Каждая страница предлагает вам не только красоту, но и функциональность на высшем уровне.</p>
+    </div>
+
+    <div class="repeating-block">
+        <img src="д5.jpg" alt="Пример изображения 1" class="repeating-image">
+        <p>Ваше виртуальное пространство красоты и удобства. Откройте для себя сайт, где дизайн не только приятен глазу, но и упрощает вашу жизнь. Идеальное сочетание элегантности и практичности.</p>
+    </div>
+
+    <!-- Повторяющийся блок контента -->
+    <div class="repeating-block">
+        <img src="д6.jpeg" alt="Пример изображения 2" class="repeating-image">
+        <p>Дизайн, в котором каждая деталь имеет значение. Наши веб-мастера вложили душу в создание сайта, где каждая деталь имеет свою роль. Погрузитесь в гармонию формы и функции!</p>
+    </div>
+
+    <div class="repeating-block">
+        <img src="д7.jpeg" alt="Пример изображения 1" class="repeating-image">
+        <p>Профессиональный дизайн с индивидуальным подходом. Наш сайт — это ваш уникальный цифровой облик. Индивидуальность в каждой линии, цвете и композиции, чтобы подчеркнуть уникальность вашего контента.</p>
+    </div>
+
+    <!-- Повторяющийся блок контента -->
+    <div class="repeating-block">
+        <img src="д8.jpg" alt="Пример изображения 2" class="repeating-image">
+        <p>Элегантность в каждом движении мыши. Испытайте визуальное удовольствие на нашем сайте, где дизайн реагирует на ваши движения. Это не просто сайт – это интерактивное искусство.</p>
+    </div>
+
+    <div class="repeating-block">
+        <img src="д9.jpeg" alt="Пример изображения 1" class="repeating-image">
+        <p>Дизайн, который вас переносит. Погрузитесь в атмосферу креатива с нашим сайтом. Мы создали виртуальное пространство, где дизайн не просто отображается — он вас переносит в новую реальность.</p>
+    </div>
+
+    <!-- Повторяющийся блок контента -->
+    <div class="repeating-block">
+        <img src="д10.jpg" alt="Пример изображения 2" class="repeating-image">
+        <p>Эстетика современного веб-дизайна. Наш сайт — это не просто страницы, это визуальная поэзия. Современные тренды в дизайне объединены для создания эстетики, которая вас окружает.</p>
+    </div>
+
+   
+</div>
+
+
+
+<body>
+    <h1>Свяжитесь с нами</h1>
+    <form id="contact-form" action="https://www.bing.com" onsubmit="return validateForm()">
+        <label for="last-name">Фамилия:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="first-name">Имя:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="phone">Мобильный телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Дата отправки сообщения:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+
+
+
+    <h1>Оформить заказ</h1>
+    <form id="order-form" action="https://www.bing.com" >
+        <label for="first-name">Имя:</label>
+        <input type="text" id="first-name" name="customer_first_name" required>
+
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="customer_age" required>
+
+        <label for="last-name">Фамилия:</label>
+        <input type="text" id="last-name" name="customer_last_name" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="customer_email" required>
+
+        <label>Выберите товар:</label>
+        <input type="radio" id="product1" name="product" value="Товар 1" required>
+        <label for="product1">Дизайн</label>
+        <input type="radio" id="product2" name="product" value="Товар 2" required>
+        <label for="product2">Консультация</label>
+
+        <label>Дополнительные опции:</label>
+        <input type="checkbox" id="option1" name="options[]" value="Опция 1">
+        <label for="option1">Нейросети</label>
+        <input type="checkbox" id="option2" name="options[]" value="Опция 2">
+        <label for="option2">Множественный отзыв</label>
+
+        <label for="order-date">Дата заказа:</label>
+        <input type="date" id="order-date" name="order_date" required>
+
+        <label for="password">Пароль от карты:</label>
+        <input type="password" id="password" name="customer_password" required>
+
+        <input type="hidden" name="order_type" value="online">
+        
+        <button type="submit">Отправить заказ</button>
+    </form>
+
+</body>
+</html>

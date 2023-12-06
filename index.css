@@ -1,0 +1,86 @@
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-flex;
+    margin-right: 20px;
+    justify-content: space-around; /* Равномерное распределение элементов по ширине */
+    align-items: center; /* Выравнивание элементов по вертикали */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для активной ссылки */
+.navbar .active {
+    font-weight: bold;
+    /* Другие стили активной ссылки, например, изменение цвета фона или текста */
+}
+
+.image-container {
+    text-align: center; /* Центрирование изображения и комментария */
+    margin: 20px; /* Отступы для визуального разделения элементов */
+}
+
+.image-caption {
+    font-style: italic; /* Курсивное начертание комментария */
+    font-size: 14px; /* Размер шрифта комментария */
+    color: #555; /* Цвет текста комментария */
+}
+
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Ширина миниатюры */
+    height: 100px; /* Высота миниатюры */
+    border: 1px solid #000; /* Граница миниатюры (по желанию) */
+}
+
+img {
+    max-width: 100%; /* Максимальная ширина изображения, чтобы оно вписывалось в миниатюру */
+    max-height: 100%; /* Максимальная высота изображения */
+}
+
+
+table {
+    background-image: url('волк.jpg'); /* Изображение на заднем фоне */
+    background-size: cover; /* Масштабирование фонового изображения */
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Объединение границ ячеек */
+}
+
+td {
+    width: 200px; /* Ширина ячейки с изображением */
+    height: 200px; /* Высота ячейки с изображением */
+
+    text-align: center; /* Центрирование содержимого ячейки */
+    vertical-align: middle; /* Центрирование содержимого ячейки по вертикали */
+}
+
+boo {
+    background-image: url('youtube.jpeg'); /* Изображение в ячейке */
+    background-size: cover; /* Масштабирование фонового изображения в ячейке */
+}
+
+.repeating-block {
+    margin-bottom: 20px;
+}
+
+.repeating-image {
+    width: auto;
+    height: auto;
+}
